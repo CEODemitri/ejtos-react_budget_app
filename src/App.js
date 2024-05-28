@@ -8,13 +8,14 @@ import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
-import RemainingBudget from './components/Remaining';
+// import RemainingBudget from './components/Remaining';
 
 // Add code to import the other components here under
 
 
 import { AppProvider } from './context/AppContext';
 import ExpenseItem from './components/ExpenseItem';
+import CurrenncySelector from './components/CurrencySelector';
 const App = () => {
     return (
         <AppProvider>
@@ -25,6 +26,7 @@ const App = () => {
                             /* Add Budget component here */
                             // Budget component
                                 <div className='col-sm'>
+                                    <CurrenncySelector/>
                                     <Budget />
                                 </div>
                         }        
